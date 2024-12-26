@@ -1,0 +1,30 @@
+header {
+    background-color: #576f35;
+    padding: 20px 20px 0 20px;
+}
+
+.logoName {
+    font-weight: 700px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burgerBtn {
+    border: none;
+    background-color: #576f35;
+    cursor: pointer;
+    color: white;
+}

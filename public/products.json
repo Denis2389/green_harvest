@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "eggplant",
+        "price": 60,
+        "image": "/images/eggplant.png",
+        "description": "Eggplant, or aubergine, is a glossy purple vegetable with a mild flavor, used in dishes like ratatouille and eggplant parmesan."
+    },
+    {
+        "id": 2,
+        "name": "leek",
+        "price": 50, 
+        "image": "/images/leek.png",
+        "description": "Leek is a mild, onion-like vegetable with long green leaves and a white stalk, often used in soups, stews, and sautés."  
+    },
+    {
+        "id": 3,
+        "name": "mushrooms",
+        "price": 40,
+        "image": "/images/mushrooms.png",
+        "description": "Mushrooms are edible fungi with a savory flavor, used in various cuisines for soups, sauces, and stir-fries."
+    },
+    {
+        "id": 4,
+        "name": "corn",
+        "price": 60,
+        "image": "/images/corn.png",
+        "description": "Corn is a widely grown cereal plant, valued for its edible kernels used in food, animal feed, and industrial products."
+    },
+    {
+        "id": 5,
+        "name": "sweet potatoes",
+        "price": 50,
+        "image": "/images/potatoes.png",
+        "description": "Sweet potatoes are sweet, starchy root vegetables, rich in vitamins and fiber, commonly used in savory and sweet dishes."
+    },
+    {
+        "id": 6,
+        "name": "carrot",
+        "price": 40,
+        "image": "/images/carrot.png",
+        "description": "Carrots are crunchy, orange root vegetables, rich in vitamins, especially vitamin A, and commonly used in salads, soups, and as a snack."
+    },
+    {
+        "id": 7,
+        "name": "grape",
+        "price": 40,
+        "image": "/images/grape.png",
+        "description": "Grapes are small, sweet, and juicy fruits, typically grown in clusters, and are used fresh or in products like wine, raisins, and juice."
+    },
+    {
+        "id": 8,
+        "name": "blueberries",
+        "price": 30,
+        "image": "/images/blueberries.png",
+        "description": "Blueberries are small, round, and sweet berries, rich in antioxidants, often eaten fresh or used in desserts, smoothies, and jams."
+    }
+]
