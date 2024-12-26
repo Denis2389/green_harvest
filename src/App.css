@@ -1,3 +1,5 @@
+
+
 h1,
 h2,
 h3,
@@ -34,15 +36,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* @media (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    padding: 0 64px;
-  }
-} */

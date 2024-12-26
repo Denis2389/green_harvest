@@ -1,9 +1,10 @@
 import styles from './Header.module.css'
 import { HiSquare3Stack3D } from "react-icons/hi2";
-import { RxHamburgerMenu } from "react-icons/rx";
+import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 
 const Header = () => {
+
     return (
       <header>
         <div className={styles.container}>
@@ -14,12 +15,7 @@ const Header = () => {
             </a>
             <span className={styles.logoName}>green.harvest</span>
             </div>
-            <nav>
-                <div className={styles.burgerMenu}>
-                    <span></span>
-                </div>
-            </nav>
-            {/* <button className={styles.burgerBtn}><RxHamburgerMenu size={24}/></button> */}
+            <BurgerMenu />
           </div>
         </div>
       </header>
