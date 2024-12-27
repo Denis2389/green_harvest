@@ -27,7 +27,7 @@
 }
 
 .firstBcPhoto {
-    background-image: url(./images/first-header-photo.jpg);
+    background-image: url(/images/first-header-photo.jpg);
     background-color: rgba(20, 20, 20, 0.2);
     background-position: center center;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 }
 
 .secondBcPhoto {
-    background-image: url(./images/second-bg-photo.png);
+    background-image: url(/images/second-bg-photo.png);
     background-color: #7a3145;
     background-position: center;
     background-repeat: no-repeat;
