@@ -2,7 +2,7 @@ import styles from './SectionTitle.module.css'
 
 const SectionTitle = () => {
     return (
-      <section>
+      <section className={styles.section}>
         <h1 className={styles.headerText}>
           organic vegetables to your diet today!
         </h1>

@@ -1,0 +1,90 @@
+.vegetableContainer {
+    background: #7a3145;
+    padding-top: 80px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.organicText {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    padding-bottom: 20px;
+}
+
+.vegetableSpan {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: rgba(251, 251, 251, 0.3);
+}
+
+.organicParagraph {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #fbfbfb;
+    padding-bottom: 40px;
+}
+
+.vegetableCardList {
+
+}
+
+/* .vegetableCardList:last-child {
+    padding-bottom: 20px;
+} */
+
+.vegetableCard {
+    border-radius: 40px;
+    padding: 32px 26px;
+    width: 334px;
+    height: 379px;
+    background: #fbfbfb;
+    margin-bottom: 20px;
+}
+
+.vegetableCard h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #7a3145;
+    padding-bottom: 12px; 
+}
+
+.vegetableCard p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+    padding-bottom: 14px;
+}
+
+.vegetableCard img {
+    width: 282px;
+    height: 243px;
+}
+
+
+@media (max-width: 768px) {
+    .swiperButtonNext,
+    .swiperButtonPrev {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .swiperButtonNext,
+    .swiperButtonPrev {
+        display: none;
+    }
+}

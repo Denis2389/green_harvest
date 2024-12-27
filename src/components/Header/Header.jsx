@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
 import { HiSquare3Stack3D } from "react-icons/hi2";
-import BurgerMenu from './BurgerMenu/BurgerMenu';
+import { RxHamburgerMenu } from "react-icons/rx";
 
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
             </a>
             <span className={styles.logoName}>green.harvest</span>
             </div>
-            <BurgerMenu />
+            <button className={styles.burgerBtn}><RxHamburgerMenu size={32}/></button>
           </div>
         </div>
       </header>

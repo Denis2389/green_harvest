@@ -1,8 +1,15 @@
 import { Formik, Form, Field } from 'formik';
 import * as Yup from "yup";
 import styles from './SectionForm.module.css'
+import toast, { Toaster } from 'react-hot-toast';
+import { useState } from 'react';
+
+const notify = () => toast('Thank you for your feedback 💝')
 
 const SectionForm = () => {
+
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
   const FeedbackSchema = Yup.object().shape({
     username: Yup.string()
       .min(2, "Too Short!")
@@ -23,7 +30,12 @@ const SectionForm = () => {
 
   const handleSubmit = (values, actions) => {
     console.log(values);
-    actions.resetForm();
+
+    setIsSubmitting(true);
+    setTimeout(() => {
+      actions.resetForm();
+      setIsSubmitting(false)
+    }, 5000)
   };
 
   return (
@@ -52,12 +64,13 @@ const SectionForm = () => {
           validationSchema={FeedbackSchema}
         >
           <Form>
-            <Field className={styles.inputName} type="text" name="username" />
-            <Field className={styles.inputEmail} type="email" name="email" />
-            <Field className={styles.inputComment} type="text" name="comment" />
+            <Field className={styles.inputName} type="text" name="username" placeholder='Username' required/>
+            <Field className={styles.inputEmail} type="email" name="email" placeholder='Email' required/>
+            <Field className={styles.inputComment} type="text" name="comment" placeholder='Comment'/>
 
-            <button className={styles.formBtn} type="submit">
-              send
+            <button onClick={notify} className={styles.formBtn} type="submit" disabled={isSubmitting}>
+              {isSubmitting ? 'Sending...' : 'send'}
+              <Toaster />
             </button>
           </Form>
         </Formik>

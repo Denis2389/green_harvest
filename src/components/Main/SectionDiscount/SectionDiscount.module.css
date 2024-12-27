@@ -1,0 +1,32 @@
+.discountSection {
+    background-color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.discountTextSpan {
+    display: inline-block;
+    border-radius: 12px;
+    width: 355px;
+    height: 102px;
+    background: #576f35;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    padding: 3px 10px;
+}
+
+.discountTextSpanSec {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+}
