@@ -5,6 +5,7 @@ import SectionDiscount from './SectionDiscount/SectionDiscount';
 import SectionReviews from './SectionReviews/SectionReviews';
 import SectionTitle from './SectionTitle/SectionTitle';
 import SectionForm from './SectionForm/SectionForm';
+import SectionSocial from './SectionSocial/SectionSocial';
 
 const Main = () => {
 
@@ -21,6 +22,7 @@ const Main = () => {
         <SectionCard />
         <SectionReviews />
         <SectionForm />
+        <SectionSocial />
     </main>
   );
 };

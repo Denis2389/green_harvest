@@ -13,7 +13,7 @@ const Header = () => {
             <a href="#">
               <HiSquare3Stack3D color='white' size={24} />
             </a>
-            <span className={styles.logoName}>green.harvest</span>
+            <a href="#"><span className={styles.logoName}>green.harvest</span></a>
             </div>
             <button className={styles.burgerBtn}><RxHamburgerMenu size={32}/></button>
           </div>
