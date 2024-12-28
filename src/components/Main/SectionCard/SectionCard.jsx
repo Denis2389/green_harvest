@@ -20,19 +20,17 @@ const SectionCard = () => {
       `.${styles.organicText}`,
       {
         opacity: 0,
-        y: 50,
-        scale: 0.9,
+        x: 100,
       },
       {
         opacity: 1,
-        y: 0,
-        scale: 1,
-        duration: 1.2,
-        ease: 'power3.out',
+        x: 0,
+        duration: 1.5,
+        ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.organicText}`,
-          start: 'top 70%',
-          end: 'bottom 10%',
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }
@@ -42,19 +40,17 @@ const SectionCard = () => {
       `.${styles.vegetableSpan}`,
       {
         opacity: 0,
-        scale: 0.8,
-        x: -30,
+        x: -100,
       },
       {
         opacity: 1,
-        scale: 1,
         x: 0,
-        duration: 1.2,
-        ease: 'power3.inOut',
+        duration: 1.5,
+        ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.vegetableSpan}`,
-          start: 'top 70%',
-          end: 'bottom 10%',
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }
@@ -64,17 +60,17 @@ const SectionCard = () => {
       `.${styles.organicParagraph}`,
       {
         opacity: 0,
-        y: 50,
+        x: 100,
       },
       {
         opacity: 1,
-        y: 0,
-        duration: 1.2,
-        ease: 'power3.out',
+        x: 0,
+        duration: 1.5,
+        ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.organicParagraph}`,
-          start: 'top 70%',
-          end: 'bottom 10%',
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }
