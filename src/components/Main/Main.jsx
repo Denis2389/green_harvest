@@ -9,12 +9,11 @@ import SectionSocial from './SectionSocial/SectionSocial';
 
 const Main = () => {
 
-
-
   return (
     <main>
 
         <BurgerMenu />
+
 
         <SectionTitle />
         <SectionAdvantage />

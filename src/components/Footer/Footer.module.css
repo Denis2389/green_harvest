@@ -1,0 +1,80 @@
+.footer {
+    background-color: #7a3145;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footerLogo {
+    padding-top: 120px;
+    padding-bottom: 14px;
+    
+}
+
+.logoName {
+    font-weight: 700px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footerLogoText {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #fbfbfb;
+    padding-top: 14px;
+    padding-bottom: 30px;
+}
+
+.footerTextFirst {
+    padding-top: 40px;
+}
+
+.footerTextFirst,
+.footerTextSecond,
+.footerTextThird {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #fbfbfb;
+}
+
+.footerTextFirst,
+.footerTextSecond {
+    padding-bottom: 14px;
+}
+
+.footerTextThird {
+    padding-bottom: 40px;
+}
+
+.footerMenuInfo {
+    padding-top: 14px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.01em;
+    color: #fbfbfb;
+}
+
+.footerLinkTel {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: #fbfbfb;
+    text-decoration: none;
+    margin-bottom: 14px;
+}
+
+.logoFlex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footerFlex {
+    display: flex;
+    flex-direction: column;
+}
