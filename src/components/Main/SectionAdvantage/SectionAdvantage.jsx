@@ -46,13 +46,13 @@ const SectionAdvantage = () => {
       {
         x: 0,                 
         opacity: 1,            
-        duration: 1,
+        duration: 1.6,
         stagger: 0.3,
         ease: 'power1.inOut',   
         scrollTrigger: {      
           trigger: `.${styles.mainBox}`, 
-          start: 'top 70%',
-          end: 'bottom 10%',   
+          start: 'top 80%',
+          end: 'bottom 50%',   
           scrub: true
         }
       }
