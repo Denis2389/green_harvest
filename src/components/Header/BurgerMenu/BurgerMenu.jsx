@@ -27,7 +27,7 @@ const BurgerMenu = ({ handleToggleMenu, isOpen }) => {
               </a>
               <p className={styles.gText}>And check my Github here👇</p>
               <a href="https://github.com/Denis2389">
-                <FaGithub size={50} color="white" style={{ margin: 'auto', marginLeft: '70px'}}/>
+                <FaGithub size={50} color="white" style={{ margin: 'auto', marginLeft: '80px'}}/>
               </a>
             </div>
           </div>
