@@ -50,7 +50,7 @@ const SectionCard = () => {
         scale: 1,
         x: 0,
         duration: 1.2,
-        ease: 'back.out(1.7)',
+        ease: 'power3.inOut',
         scrollTrigger: {
           trigger: `.${styles.vegetableSpan}`,
           start: 'top 70%',

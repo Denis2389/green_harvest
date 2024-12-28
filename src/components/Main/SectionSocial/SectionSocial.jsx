@@ -13,37 +13,15 @@ const SectionSocial = () => {
       `.${styles.social}`,
       {
         opacity: 0,
-        y: 50,
+        x: -100,
       },
       {
         opacity: 1,
-        y: 0,
-        duration: 1.5,
+        x: 0,
+        duration: 1.2,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: `.${styles.social}`,
-          start: 'top 70%',
-          end: 'bottom 10%',
-          scrub: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      `.${styles.socialItems}`,
-      {
-        opacity: 0,
-        scale: 0.8,
-        y: 30,
-      },
-      {
-        opacity: 1,
-        scale: 1,
-        y: 0,
-        duration: 1.2,
-        ease: 'back.out(1.7)',
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: `.${styles.socialItems}`,
           start: 'top 70%',
           end: 'bottom 10%',
           scrub: true,

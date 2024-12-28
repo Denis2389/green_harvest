@@ -72,7 +72,7 @@ const SectionReviews = () => {
         scrollTrigger: {
           trigger: `.${styles.imgJhon}`,
           start: "top 70%",
-          end: "bottom 10%",
+          end: "bottom 20%",
           scrub: true,
         },
       }
