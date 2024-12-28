@@ -29,8 +29,8 @@ const SectionForm = () => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: `.${styles.formText}`,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: 'top 70%',
+          end: 'bottom 10%',
           scrub: true,
         },
       }
@@ -50,8 +50,8 @@ const SectionForm = () => {
         ease: 'back.out(1.7)',
         scrollTrigger: {
           trigger: `.${styles.formTextSpan}`,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: 'top 70%',
+          end: 'bottom 10%',
           scrub: true,
         },
       }
@@ -69,8 +69,8 @@ const SectionForm = () => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: `.${styles.formParagraph}`,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: 'top 70%',
+          end: 'bottom 10%',
           scrub: true,
         },
       }
@@ -88,8 +88,8 @@ const SectionForm = () => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: `.${styles.modalBox}`,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: 'top 70%',
+          end: 'bottom 10%',
           scrub: true,
         },
       }
@@ -107,8 +107,8 @@ const SectionForm = () => {
         ease: 'back.out(1.7)',
         scrollTrigger: {
           trigger: `.${styles.formBtn}`,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: 'top 70%',
+          end: 'bottom 10%',
           scrub: true,
         },
       }

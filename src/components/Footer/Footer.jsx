@@ -19,8 +19,8 @@ const Footer = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: `.${styles.logoFirst}`,
-          start: "top 80%",
-          end: "bottom 20%",
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }
@@ -35,8 +35,8 @@ const Footer = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: `.${styles.logoSecond}`,
-          start: "top 80%",
-          end: "bottom 20%",
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }

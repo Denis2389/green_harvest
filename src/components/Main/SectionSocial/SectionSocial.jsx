@@ -22,8 +22,8 @@ const SectionSocial = () => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: `.${styles.social}`,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: 'top 70%',
+          end: 'bottom 10%',
           scrub: true,
         },
       }
@@ -44,8 +44,8 @@ const SectionSocial = () => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: `.${styles.socialItems}`,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: 'top 70%',
+          end: 'bottom 10%',
           scrub: true,
         },
       }

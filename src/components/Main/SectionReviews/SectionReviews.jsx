@@ -17,8 +17,8 @@ const SectionReviews = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.freshTitle}`,
-          start: "top 80%",
-          end: "bottom 20%",
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }
@@ -35,8 +35,8 @@ const SectionReviews = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.freshParagraph}`,
-          start: "top 80%",
-          end: "bottom 20%",
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }
@@ -53,8 +53,8 @@ const SectionReviews = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.boxModel}`,
-          start: "top 80%",
-          end: "bottom 20%",
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }
@@ -71,8 +71,8 @@ const SectionReviews = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.imgJhon}`,
-          start: "top 80%",
-          end: "bottom 20%",
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }

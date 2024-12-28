@@ -22,8 +22,8 @@ const SectionDiscount = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.discountTitle}`,
-          start: "top 80%",
-          end: "bottom 20%",
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }
@@ -42,8 +42,8 @@ const SectionDiscount = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.discountTextSpan}`,
-          start: "top 80%",
-          end: "bottom 20%",
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }
@@ -62,8 +62,8 @@ const SectionDiscount = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.discountTextSpanSec}`,
-          start: "top 80%",
-          end: "bottom 50%",
+          start: "top 70%",
+          end: "bottom 10%",
           scrub: true,
         },
       }

@@ -31,8 +31,8 @@ const SectionCard = () => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: `.${styles.organicText}`,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: 'top 70%',
+          end: 'bottom 10%',
           scrub: true,
         },
       }
@@ -53,8 +53,8 @@ const SectionCard = () => {
         ease: 'back.out(1.7)',
         scrollTrigger: {
           trigger: `.${styles.vegetableSpan}`,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: 'top 70%',
+          end: 'bottom 10%',
           scrub: true,
         },
       }
@@ -73,8 +73,8 @@ const SectionCard = () => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: `.${styles.organicParagraph}`,
-          start: 'top 80%',
-          end: 'bottom 20%',
+          start: 'top 70%',
+          end: 'bottom 10%',
           scrub: true,
         },
       }

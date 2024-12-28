@@ -18,8 +18,8 @@ const SectionAdvantage = () => {
         ease: 'power2.out',   
         scrollTrigger: {      
           trigger: `.${styles.paragraphTextSecond}`, 
-          start: 'top 100%',
-          end: 'bottom 50%',   
+          start: 'top 70%',
+          end: 'bottom 10%',   
           scrub: true
         }
       }
@@ -34,8 +34,8 @@ const SectionAdvantage = () => {
         ease: 'power2.out',   
         scrollTrigger: {      
           trigger: `.${styles.paragraphTitle}`, 
-          start: 'top 100%',
-          end: 'bottom 50%',   
+          start: 'top 70%',
+          end: 'bottom 10%',   
           scrub: true
         }
       }
@@ -51,8 +51,8 @@ const SectionAdvantage = () => {
         ease: 'power1.inOut',   
         scrollTrigger: {      
           trigger: `.${styles.mainBox}`, 
-          start: 'top 100%',
-          end: 'bottom 50%',   
+          start: 'top 70%',
+          end: 'bottom 10%',   
           scrub: true
         }
       }
