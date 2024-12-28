@@ -1,6 +1,10 @@
 header {
-    background-color: #576f35;
+    background-color: rgba(87, 111, 53, 0.7);
     padding: 20px 20px 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    backdrop-filter: blur(2px);
 }
 
 .logoName {
@@ -24,7 +28,7 @@ header {
 
 .burgerBtn {
     border: none;
-    background-color: #576f35;
+    background-color: rgba(87, 111, 53, 0);
     cursor: pointer;
     color: white;
     margin-left: auto;

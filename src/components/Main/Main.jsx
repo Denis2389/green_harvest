@@ -13,8 +13,6 @@ const Main = () => {
     <main>
 
         <BurgerMenu />
-
-
         <SectionTitle />
         <SectionAdvantage />
         <SectionDiscount />

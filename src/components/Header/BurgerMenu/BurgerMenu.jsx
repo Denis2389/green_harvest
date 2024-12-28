@@ -4,11 +4,8 @@ import { FaTelegram } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 
 const BurgerMenu = ({ handleToggleMenu, isOpen }) => {
-
   
     return (
-      <>
-        {isOpen && (
           <div className={`${styles.burgerMenu} ${isOpen ? styles.open : ""}`}>
             <button onClick={handleToggleMenu}>
               <IoMdClose size={40} color='white'/>
@@ -25,14 +22,12 @@ const BurgerMenu = ({ handleToggleMenu, isOpen }) => {
               <a href="https://www.linkedin.com/in/denis-berezniak-b3a2912b1/">
                 <FaLinkedin size={50} color="white" />
               </a>
-              <p className={styles.gText}>And check my Github here👇</p>
+              <p className={styles.gText}>And check my Github here&nbsp;👇</p>
               <a href="https://github.com/Denis2389">
                 <FaGithub size={50} color="white" style={{ margin: 'auto', marginLeft: '80px'}}/>
               </a>
             </div>
           </div>
-        )}
-      </>
     );
 }
 
