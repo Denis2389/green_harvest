@@ -1,6 +1,31 @@
 import styles from './SectionTitle.module.css'
+import gsap from 'gsap';
+import { useLayoutEffect } from 'react';
 
 const SectionTitle = () => {
+
+  useLayoutEffect(() => {
+    gsap.fromTo(
+      `.${styles.headerText}`,
+      { x: -200, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.5,
+        ease: 'power2.out'
+      }
+    );
+    gsap.fromTo(
+      `.${styles.headerTextParagraph}`,
+      { x: 200, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        ease: 'power2.out'
+      }
+    );
+  }, [])
     return (
       <section className={styles.section}>
         <h1 className={styles.headerText}>

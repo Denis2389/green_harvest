@@ -1,15 +1,56 @@
 import styles from './Footer.module.css'
 import { HiSquare3Stack3D } from "react-icons/hi2";
+import { useLayoutEffect } from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+
+  useLayoutEffect(() => {
+    gsap.fromTo(
+      `.${styles.logoFirst}`,
+      { x: -200, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: `.${styles.logoFirst}`,
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      `.${styles.logoSecond}`,
+      { x: 200, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: `.${styles.logoSecond}`,
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: true,
+        },
+      }
+    );
+  }, [])
+
     return (
       <footer className={styles.footer}>
         <div className={styles.footerLogo}>
           <div className={styles.logoFlex}>
             <a href="#">
-              <HiSquare3Stack3D color="white" size={24} />
+              <HiSquare3Stack3D className={styles.logoFirst} color="white" size={24} />
             </a>
-            <a href="#">
+            <a className={styles.logoSecond} href="#">
               <span className={styles.logoName}>green.harvest</span>
             </a>
           </div>

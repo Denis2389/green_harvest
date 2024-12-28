@@ -52,10 +52,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
 }
 
 .mainBoxFirst {
     margin-top: 40px;
+    transform: translateX(-100%);
+}
+
+.mainBoxSecond {
+    transform: translateX(100%);
+}
+
+.mainBoxThird {
+    transform: translateX(-100%);
 }
 
 .titleParagraphFirst {

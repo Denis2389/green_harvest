@@ -6,10 +6,80 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import 'swiper/swiper-bundle.css';
 import { Autoplay } from 'swiper/modules';
+import { useLayoutEffect } from 'react';
+import ScrollTrigger from 'gsap';
+import gsap from 'gsap';
 
+gsap.registerPlugin(ScrollTrigger);
 
 
 const SectionCard = () => {
+
+  useLayoutEffect(() => {
+    gsap.fromTo(
+      `.${styles.organicText}`,
+      {
+        opacity: 0,
+        y: 50,
+        scale: 0.9,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1.5,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: `.${styles.organicText}`,
+          start: 'top 80%',
+          end: 'bottom 20%',
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      `.${styles.vegetableSpan}`,
+      {
+        opacity: 0,
+        scale: 0.8,
+        x: -30,
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        x: 0,
+        duration: 1.2,
+        ease: 'back.out(1.7)',
+        scrollTrigger: {
+          trigger: `.${styles.vegetableSpan}`,
+          start: 'top 80%',
+          end: 'bottom 20%',
+          scrub: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      `.${styles.organicParagraph}`,
+      {
+        opacity: 0,
+        y: 50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: `.${styles.organicParagraph}`,
+          start: 'top 80%',
+          end: 'bottom 20%',
+          scrub: true,
+        },
+      }
+    );
+  }, []);
 
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false)
@@ -36,6 +106,7 @@ const SectionCard = () => {
         </Box>
       );
     }
+
 
     return (
       <section>
