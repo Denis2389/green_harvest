@@ -27,7 +27,7 @@ const SectionCard = () => {
         opacity: 1,
         y: 0,
         scale: 1,
-        duration: 1.5,
+        duration: 1.2,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: `.${styles.organicText}`,
@@ -69,7 +69,7 @@ const SectionCard = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 1.2,
         ease: 'power3.out',
         scrollTrigger: {
           trigger: `.${styles.organicParagraph}`,
