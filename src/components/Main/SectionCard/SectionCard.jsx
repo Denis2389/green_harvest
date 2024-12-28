@@ -20,7 +20,7 @@ const SectionCard = () => {
       `.${styles.organicText}`,
       {
         opacity: 0,
-        x: 100,
+        x: -100,
       },
       {
         opacity: 1,
@@ -29,8 +29,8 @@ const SectionCard = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.organicText}`,
-          start: "top 70%",
-          end: "bottom 10%",
+          start: "top 80%",
+          end: "bottom 20%",
           scrub: true,
         },
       }
@@ -69,8 +69,8 @@ const SectionCard = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.organicParagraph}`,
-          start: "top 70%",
-          end: "bottom 10%",
+          start: "top 90%",
+          end: "bottom 30%",
           scrub: true,
         },
       }
