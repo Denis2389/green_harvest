@@ -29,8 +29,8 @@ const SectionCard = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.organicText}`,
-          start: "top 80%",
-          end: "bottom 20%",
+          start: "top 90%",
+          end: "bottom 30%",
           scrub: true,
         },
       }
@@ -49,8 +49,8 @@ const SectionCard = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: `.${styles.vegetableSpan}`,
-          start: "top 70%",
-          end: "bottom 10%",
+          start: "top 90%",
+          end: "bottom 30%",
           scrub: true,
         },
       }
