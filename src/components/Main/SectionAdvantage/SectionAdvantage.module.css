@@ -119,3 +119,38 @@
     font-weight: 700;
     color: #141414;
 }
+
+@media (min-width: 768px) {
+    .paragraphTextSecond {
+        width: 700px;
+        font-size: 50px;
+    }
+
+    .textSpan {
+        font-size: 50px;
+    }
+
+    .paragraphTitle {
+        font-size: 23px;
+        width: 700px;
+    }
+
+    .mainBox {
+        width: 700px;
+        height: 140px;
+    }
+
+    .titleParagraphFirst,
+    .titleParagraphSecond,
+    .titleParagraphThird {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .circle {
+        height: 80px;
+        width: 80px;
+        top: 35px;
+        left: 50px;
+    }
+}

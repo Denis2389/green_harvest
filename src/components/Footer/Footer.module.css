@@ -78,3 +78,24 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (min-width: 768px) {
+
+    .footerLogoText {
+        font-size: 20px;
+    }
+
+    .footerTextFirst,
+    .footerTextSecond,
+    .footerTextThird {
+        font-size: 36px;
+    }
+
+    .footerLinkTel {
+        font-size: 23px;
+    }
+
+    .footerMenuInfo {
+        font-size: 23px;
+    }
+}

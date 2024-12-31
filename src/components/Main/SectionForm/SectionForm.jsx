@@ -171,7 +171,7 @@ const SectionForm = () => {
           onSubmit={handleSubmit}
           validationSchema={FeedbackSchema}
         >
-          <Form>
+          <Form className={styles.formWrapper}>
             <Field className={styles.inputName} type="text" name="username" placeholder='Username' required/>
             <Field className={styles.inputEmail} type="email" name="email" placeholder='Email' required/>
             <Field className={styles.inputComment} type="text" name="comment" placeholder='Comment'/>

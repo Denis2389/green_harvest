@@ -63,9 +63,9 @@ const SectionAdvantage = () => {
       <section>
         <div className={styles.thirdSectionFlex}>
           <h2 className={styles.paragraphTextSecond}>
-            To order your <span className={styles.textSpan}>vegetable</span>{" "}
+            To order your <span className={styles.textSpan}>vegetable&nbsp;</span>
             basket simply follow these
-            <span className={styles.textSpan}>easy steps</span>
+            <span className={styles.textSpan}>&nbsp;easy steps</span>
           </h2>
           <p className={styles.paragraphTitle}>
             Our baskets are assembled with care and delivered straight to your

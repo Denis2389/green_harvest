@@ -74,6 +74,20 @@
     height: 243px;
 }
 
+@media (min-width: 768px) {
+
+    .organicText {
+        font-size: 60px;
+    }
+
+    .vegetableSpan {
+        font-size: 60px;
+    }
+
+    .organicParagraph {
+        font-size: 25px;
+    }
+}
 
 @media (max-width: 768px) {
     .swiperButtonNext,

@@ -52,3 +52,34 @@
     min-height: 450px;
     background-color: rgba(20, 20, 20, 0.3);
 }
+
+@media (min-width: 768px) {
+    .secondBcPhoto {
+        display: none;
+    }
+
+    .firstPhotoContainer {
+        padding: 0;
+    }
+
+    .sectionContainerFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .firstBcPhoto {
+        min-height: 400px;
+        min-width: 450px;
+        width: 50%;
+    }
+
+    .section {
+        background-color: #576f35;
+        padding-top: 0;
+    }
+
+    .firstSectionWidth {
+        width: 50%;
+    }
+}

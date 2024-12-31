@@ -32,3 +32,24 @@
     justify-content: space-around;
     color: #fafafa;
 }
+
+@media (min-width: 768px) {
+    .social {
+        width: 450px;
+        height: 550px;
+        
+    }
+
+    .social img {
+        min-width: 410px;
+        min-height: 300px;
+    }
+
+    .social p {
+        font-size: 18px;
+    }
+
+    .socialList {
+        padding: 0 30px 20px 30px;
+    }
+}

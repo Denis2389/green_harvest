@@ -30,3 +30,10 @@
     text-transform: uppercase;
     color: #141414;
 }
+
+@media (min-width: 768px) {
+    .discountTextSpan {
+        width: 700px;
+        padding: 10px 20px 160px 20px;
+    }
+}

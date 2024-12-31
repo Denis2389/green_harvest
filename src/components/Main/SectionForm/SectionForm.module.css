@@ -136,3 +136,48 @@
     background: #576f35;
     border: none;
 }
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .formParagraph { 
+        font-size: 30; 
+    }
+
+    .modalBox {
+        width: 500px;
+    }
+
+    .textForm {
+        font-size: 32px;
+    }
+
+    .firstSpan {
+        font-size: 32px;
+    }
+
+    .secondSpan {
+        font-size: 32px;
+    }
+
+    .inputName,
+    .inputEmail,
+    .inputComment {
+        width: 430px;
+
+    }
+
+    .formWrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .formBtn {
+        font-size: 18px;
+        width: 400px;
+        height: 60px;
+    }
+
+    .formParagraph {
+        font-size: 18px;
+    }
+}
