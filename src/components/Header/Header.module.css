@@ -34,3 +34,9 @@ header {
     color: white;
     margin-left: auto;
 }
+
+@media (min-width: 800px) {
+    .burgerBtn {
+        display: none;
+    }
+}

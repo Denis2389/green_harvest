@@ -1,6 +1,5 @@
 import styles from './BurgerMenu.module.css'
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaGithub, FaTelegram } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
 const BurgerMenu = ({ handleToggleMenu, isOpen }) => {
