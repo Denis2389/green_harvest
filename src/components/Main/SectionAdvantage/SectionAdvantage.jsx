@@ -8,46 +8,66 @@ const SectionAdvantage = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useLayoutEffect(() => {
+
+    const isDesktop = window.innerWidth >= 820;
+
+    const desktopConfig = {
+      paragraphTextSecond: { x: -200, duration: 1.5 },
+      paragraphTitle: { x: -200, duration: 1.5 },
+      mainBox: { x: 200, duration: 1.6, stragger: 0.3 },
+      scrollTrigger: {
+        paragraphTextSecond: { start: 'top 70%', end: 'bottom 20%' },
+      }
+    }
+
+    const mobileConfig = {
+      paragraphTextSecond: { x: -100, duration: 1.2 },
+      paragraphTitle: { x: -100, duration: 1.2 },
+      mainBox: { x: 100, duration: 1.3, stragger: 0.2 }
+    }
+
+    const config = isDesktop ? desktopConfig : mobileConfig
+
     gsap.fromTo(
       `.${styles.paragraphTextSecond}`,
-      { x: -200, opacity: 0 }, 
+      { x: config.paragraphTextSecond, opacity: 0 }, 
       {
         x: 0,                 
         opacity: 1,            
-        duration: 1.5,     
-        ease: 'power2.out',   
+        duration: config.paragraphTextSecond.duration,     
+        ease: 'power2.out',
         scrollTrigger: {      
           trigger: `.${styles.paragraphTextSecond}`, 
           start: 'top 70%',
-          end: 'bottom 10%',   
+          end: 'bottom 20%',   
           scrub: true
         }
       }
     );
     gsap.fromTo(
       `.${styles.paragraphTitle}`,
-      { x: -200, opacity: 0 }, 
+      { x: config.paragraphTitle.x, opacity: 0 }, 
       {
         x: 0,                 
         opacity: 1,            
-        duration: 1.5,     
+        duration: config.paragraphTitle.duration,     
         ease: 'power2.out',   
         scrollTrigger: {      
           trigger: `.${styles.paragraphTitle}`, 
           start: 'top 70%',
-          end: 'bottom 10%',   
+          end: 'bottom 10%',  
           scrub: true
         }
       }
     );
     gsap.fromTo(
       `.${styles.mainBox}`,
-      { x: 200, opacity: 0 }, 
+      { x: config.mainBox.x, opacity: 0 }, 
       {
         x: 0,                 
         opacity: 1,            
-        duration: 1.6,
-        stagger: 0.3,
+        duration: config.mainBox.duration,
+        stagger: config.mainBox.stragger,
         ease: 'power1.inOut',   
         scrollTrigger: {      
           trigger: `.${styles.mainBox}`, 
@@ -63,7 +83,7 @@ const SectionAdvantage = () => {
       <section>
         <div className={styles.thirdSectionFlex}>
           <h2 className={styles.paragraphTextSecond}>
-            To order your <span className={styles.textSpan}>vegetable&nbsp;</span>
+            To order your <span className={styles.textSpan}>vegetable</span>
             basket simply follow these
             <span className={styles.textSpan}>&nbsp;easy steps</span>
           </h2>

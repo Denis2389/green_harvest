@@ -41,13 +41,13 @@ const Header = () => {
               <a href="https://www.linkedin.com/in/denis-berezniak-b3a2912b1/">
                 <FaLinkedin size={50} color="white" />
               </a>
-              <a href="https://github.com/Denis2389">
+              {/* <a href="https://github.com/Denis2389">
                 <FaGithub
                   size={50}
                   color="white"
                   style={{ margin: "auto", marginLeft: "80px" }}
                 />
-              </a>
+              </a> */}
             </div>
             <button onClick={handleToggleMenu} className={styles.burgerBtn}>
               <RxHamburgerMenu size={32} />
