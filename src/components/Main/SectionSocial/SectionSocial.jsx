@@ -3,10 +3,13 @@ import { FaInstagramSquare, FaFacebookSquare, FaYoutube } from "react-icons/fa";
 import { useLayoutEffect } from 'react';
 import ScrollTrigger from 'gsap';
 import gsap from 'gsap';
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const SectionSocial = () => {
+
+  const { t } = useTranslation;
 
   useLayoutEffect(() => {
     gsap.fromTo(
@@ -34,7 +37,7 @@ const SectionSocial = () => {
       <div className={styles.socialContainer}>
         <div className={styles.social}>
           <img src="/images/footerImg.png" />
-          <p>Follow us on our social networks:</p>
+          <p>{t('socialText')}</p>
           <ul className={styles.socialList}>
             <li className={styles.socialItems}>
               <a target='_blank' href="https://www.instagram.com/?locale=ru"></a>

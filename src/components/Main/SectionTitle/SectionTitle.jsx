@@ -1,8 +1,11 @@
 import styles from './SectionTitle.module.css'
 import gsap from 'gsap';
 import { useLayoutEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const SectionTitle = () => {
+
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     gsap.fromTo(
@@ -31,13 +34,10 @@ const SectionTitle = () => {
         <div className={styles.sectionContainerFlex}>
           <div className={styles.firstSectionWidth}>
             <h1 className={styles.headerText}>
-              organic vegetables to your diet today!
+              {t('titleHeaderText')}
             </h1>
             <p className={styles.headerTextParagraph}>
-              Our expertly curated vegetable baskets are made with the freshest,
-              highest quality vegetables available. Fresh Harvest Box has got
-              you covered. Fresh, high-quality vegetables in expertly curated
-              vegetable baskets delivered to you.
+              {t('titleHeaderDescription')}
             </p>
           </div>
           <div className={styles.firstBcPhoto}></div>

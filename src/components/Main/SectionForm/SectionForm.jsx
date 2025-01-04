@@ -6,12 +6,15 @@ import { useState } from 'react';
 import { useLayoutEffect } from 'react';
 import ScrollTrigger from 'gsap';
 import gsap from 'gsap';
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const notify = () => toast('Thank you for your feedback 💝')
 
 const SectionForm = () => {
+
+  const { t } = useTranslation;
 
   useLayoutEffect(() => {
     gsap.fromTo(
@@ -150,21 +153,15 @@ const SectionForm = () => {
     <section className={styles.formContainer}>
       <div>
         <h2 className={styles.formText}>
-          Fresh <span className={styles.formTextSpan}>Harvest</span> Box has got
-          you covered
+          {t('formTitle')}
         </h2>
         <p className={styles.formParagraph}>
-          Our boxes are packed with delicious, nutritious vegetables, perfect
-          for anyone looking to eat healthier or support local farmers. Order
-          your box today and start enjoying the best that nature has to offer!
+          {t('formDescription')}
         </p>
       </div>
       <div className={styles.modalBox}>
         <h4 className={styles.textForm}>
-          Ordering <span className={styles.firstSpan}>from us</span> is quick
-          and easy! Fill out
-          <span className={styles.secondSpan}>the form</span> below and we will
-          contact you !
+          {t('formText')}
         </h4>
         <Formik
           initialValues={initialValues}
