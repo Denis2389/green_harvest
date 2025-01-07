@@ -8,7 +8,7 @@ import { FaInstagram, FaLinkedin, FaTelegram } from 'react-icons/fa'
 
 const Header = () => {
 
-  const { i18n } = useTransition();
+  const { i18n } = useTransition()
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);

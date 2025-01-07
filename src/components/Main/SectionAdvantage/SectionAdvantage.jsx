@@ -2,11 +2,11 @@ import styles from './SectionAdvantage.module.css'
 import gsap from 'gsap';
 import { useLayoutEffect } from 'react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const SectionAdvantage = () => {
 
-  const { t } = useTranslation();
+  const { t } = useTranslation
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -86,34 +86,28 @@ const SectionAdvantage = () => {
       <section>
         <div className={styles.thirdSectionFlex}>
           <h2 className={styles.paragraphTextSecond}>
-            <Trans>
-              To order your <span className={styles.textSpan}>vegetable</span> basket simply follow these <span className={styles.textSpan}>easy steps</span>
-            </Trans>
+            {t('advantageTitle')}
           </h2>
-          <p className={styles.paragraphTitle}>{t("advantageDescription")}</p>
+          <p className={styles.paragraphTitle}>
+            {t('advantageDescription')}
+          </p>
           <div className={styles.mainBoxSection}>
             <div className={`${styles.mainBox} ${styles.mainBoxFirst}`}>
               <div className={styles.circle}>1</div>
               <p className={styles.titleParagraphFirst}>
-                <Trans>
-                Just choose the <span className={styles.titleSpan}>vegetable</span> you want to order by clicking on the checkboxes <span className={styles.titleSpan}>next to it</span>
-                </Trans>
+                {t('advantagesFirstCard"')}
               </p>
             </div>
             <div className={`${styles.mainBox} ${styles.mainBoxSecond}`}>
               <div className={styles.circle}>2</div>
               <p className={styles.titleParagraphSecond}>
-                <Trans>
-                  Click on <span className={styles.titleSpan}>the basket </span> and fill out the form.
-                </Trans>
+                {t('advantagesSecondCard')}
               </p>
             </div>
             <div className={`${styles.mainBox} ${styles.mainBoxThird}`}>
               <div className={styles.circle}>3</div>
               <p className={styles.titleParagraphThird}>
-                <Trans>
-                Sit back and relax! Your <span className={styles.titleSpan}> fresh vegetables </span> basket will be delivered.
-                </Trans>
+                {t('advantagesThirdCard')}
               </p>
             </div>
           </div>

@@ -2,13 +2,13 @@ import styles from './SectionDiscount.module.css'
 import { useLayoutEffect } from 'react';
 import ScrollTrigger from 'gsap';
 import gsap from 'gsap';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const SectionDiscount = () => {
 
-  const { t } = useTranslation();
+  const { t } = useTranslation
 
   useLayoutEffect(() => {
     gsap.fromTo(
@@ -77,9 +77,7 @@ const SectionDiscount = () => {
     <section>
       <div className={styles.discountSection}>
         <h2 className={styles.discountTitle}>
-          <Trans>
-          <span className={styles.discountTextSpan}>Discount up to 40%!</span> <span className={styles.discountTextSpanSec}>Taste the vitamins and keep your health</span>
-          </Trans>
+          {t('discountTitle')}
         </h2>
       </div>
     </section>

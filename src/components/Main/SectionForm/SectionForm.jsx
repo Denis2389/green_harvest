@@ -14,7 +14,7 @@ const notify = () => toast('Thank you for your feedback 💝')
 
 const SectionForm = () => {
 
-  const { t } = useTranslation();
+  const { t } = useTranslation;
 
   useLayoutEffect(() => {
     gsap.fromTo(
