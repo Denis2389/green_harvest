@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SectionSocial = () => {
 
-  const { t } = useTranslation;
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     gsap.fromTo(

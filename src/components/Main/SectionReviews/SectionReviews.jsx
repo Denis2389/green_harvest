@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SectionReviews = () => {
 
-  const { t } = useTranslation;
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     gsap.fromTo(

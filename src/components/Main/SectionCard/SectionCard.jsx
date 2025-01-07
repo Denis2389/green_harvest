@@ -9,14 +9,14 @@ import { Autoplay } from 'swiper/modules';
 import { useLayoutEffect } from 'react';
 import ScrollTrigger from 'gsap';
 import gsap from 'gsap';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
 
 const SectionCard = () => {
 
-  const { t } = useTranslation;
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     gsap.fromTo(
@@ -111,7 +111,9 @@ const SectionCard = () => {
       <section>
         <div className={styles.vegetableContainer}>
           <h2 className={styles.organicText}>
-            {t('cardTitle')}
+            <Trans>
+            organic <span className={styles.organicText}>vegetables</span>
+            </Trans>
           </h2>
           <p className={styles.organicParagraph}>
             {t('cardDescription')}
