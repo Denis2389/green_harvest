@@ -1,18 +1,12 @@
 import styles from './Header.module.css'
-import { useState, useTransition } from 'react'
+import { useState } from 'react'
 import { HiSquare3Stack3D } from "react-icons/hi2";
 import { RxHamburgerMenu } from "react-icons/rx";
 import BurgerMenu from './BurgerMenu/BurgerMenu';
-import { FaInstagram, FaLinkedin, FaTelegram } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaGithub, FaTelegram } from 'react-icons/fa'
 
 
 const Header = () => {
-
-  const { i18n } = useTransition()
-
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-  }
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -47,8 +41,13 @@ const Header = () => {
               <a href="https://www.linkedin.com/in/denis-berezniak-b3a2912b1/">
                 <FaLinkedin size={50} color="white" />
               </a>
-              <button onClick={() => changeLanguage('ua')} className={styles.btnChangeUkr}>Українська</button>
-              <button onClick={() => changeLanguage('en')} className={styles.btnChangeEng}>English</button>
+              {/* <a href="https://github.com/Denis2389">
+                <FaGithub
+                  size={50}
+                  color="white"
+                  style={{ margin: "auto", marginLeft: "80px" }}
+                />
+              </a> */}
             </div>
             <button onClick={handleToggleMenu} className={styles.burgerBtn}>
               <RxHamburgerMenu size={32} />

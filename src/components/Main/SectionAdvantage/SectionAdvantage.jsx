@@ -2,11 +2,8 @@ import styles from './SectionAdvantage.module.css'
 import gsap from 'gsap';
 import { useLayoutEffect } from 'react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { useTranslation } from 'react-i18next';
 
 const SectionAdvantage = () => {
-
-  const { t } = useTranslation
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -86,28 +83,38 @@ const SectionAdvantage = () => {
       <section>
         <div className={styles.thirdSectionFlex}>
           <h2 className={styles.paragraphTextSecond}>
-            {t('advantageTitle')}
+            To order your <span className={styles.textSpan}>vegetable</span>
+            basket simply follow these
+            <span className={styles.textSpan}>&nbsp;easy steps</span>
           </h2>
           <p className={styles.paragraphTitle}>
-            {t('advantageDescription')}
+            Our baskets are assembled with care and delivered straight to your
+            doorstep, so you can enjoy the taste of fresh fruit without ever
+            leaving your home.
           </p>
           <div className={styles.mainBoxSection}>
             <div className={`${styles.mainBox} ${styles.mainBoxFirst}`}>
               <div className={styles.circle}>1</div>
               <p className={styles.titleParagraphFirst}>
-                {t('advantagesFirstCard"')}
+                Just choose the
+                <span className={styles.titleSpan}>&nbsp;vegetable</span> you want to
+                order by clicking on the checkboxes
+                <span className={styles.titleSpan}>&nbsp;next to it</span>.
               </p>
             </div>
             <div className={`${styles.mainBox} ${styles.mainBoxSecond}`}>
               <div className={styles.circle}>2</div>
               <p className={styles.titleParagraphSecond}>
-                {t('advantagesSecondCard')}
+                Click on <span className={styles.titleSpan}>the basket&nbsp;</span>
+                and fill out the form.
               </p>
             </div>
             <div className={`${styles.mainBox} ${styles.mainBoxThird}`}>
               <div className={styles.circle}>3</div>
               <p className={styles.titleParagraphThird}>
-                {t('advantagesThirdCard')}
+                Sit back and relax! Your
+                <span className={styles.titleSpan}>&nbsp;fresh vegetables&nbsp;</span>
+                basket will be delivered.
               </p>
             </div>
           </div>

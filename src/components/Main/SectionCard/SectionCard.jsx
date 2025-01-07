@@ -9,14 +9,11 @@ import { Autoplay } from 'swiper/modules';
 import { useLayoutEffect } from 'react';
 import ScrollTrigger from 'gsap';
 import gsap from 'gsap';
-import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
 
 const SectionCard = () => {
-
-  const { t } = useTranslation;
 
   useLayoutEffect(() => {
     gsap.fromTo(
@@ -111,10 +108,12 @@ const SectionCard = () => {
       <section>
         <div className={styles.vegetableContainer}>
           <h2 className={styles.organicText}>
-            {t('cardTitle')}
+            organic <span className={styles.vegetableSpan}>vegetables</span>
           </h2>
           <p className={styles.organicParagraph}>
-            {t('cardDescription')}
+            Our organic vegetables are hand-picked from local farms and
+            delivered straight to your doorstep, ensuring that you get the
+            freshest and most nutritious produce possible.
           </p>
           <div className={styles.vegetableCardList}>
             <Swiper

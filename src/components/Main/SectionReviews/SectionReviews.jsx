@@ -2,14 +2,10 @@ import styles from './SectionReviews.module.css'
 import { useLayoutEffect } from 'react';
 import ScrollTrigger from 'gsap';
 import gsap from 'gsap';
-import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const SectionReviews = () => {
-
-  const { t } = useTranslation;
-
   useLayoutEffect(() => {
     gsap.fromTo(
       `.${styles.freshTitle}`,
@@ -86,10 +82,11 @@ const SectionReviews = () => {
     return (
       <div className={styles.freshContainer}>
         <h2 className={styles.freshTitle}>
-          {t('reviewsTitle')}
+          reviews from our <span className={styles.freshTextSpan}>customers</span>
         </h2>
         <p className={styles.freshParagraph}>
-          {t('reviewsDescription')}
+          Words of our customers: impressions and opinions about the quality of
+          our services and the freshness of our products.
         </p>
         <div className={styles.boxModel}>
           <img
@@ -101,7 +98,9 @@ const SectionReviews = () => {
           />
           <h4 className={styles.nameTitle}>John Wax</h4>
           <p className={styles.nameText}>
-            {t('reviewsHuman')}
+            These vegetables are my secret to delicious and healthy meals. The
+            quality is always at the highest level, the aroma and taste are
+            enchanting. I advise every fan of real products!
           </p>
         </div>
       </div>

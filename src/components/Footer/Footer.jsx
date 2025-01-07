@@ -3,13 +3,10 @@ import { HiSquare3Stack3D } from "react-icons/hi2";
 import { useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap';
-import { useTranslation } from 'react-i18next';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
-
-  const { t } = useTranslation;
 
   useLayoutEffect(() => {
     gsap.fromTo(
@@ -58,17 +55,18 @@ const Footer = () => {
             </a>
           </div>
           <p className={styles.footerLogoText}>
-            {t('footerTitle')}
+            Whether youre looking for a healthy snack or a thoughtful gift, our
+            fruit baskets are the perfect choice.
           </p>
           <div className={styles.footerFlex}>
             <a className={styles.footerTextFirst} href="#">
-              {t('footerTextFirst')}
+              how it works
             </a>
             <a className={styles.footerTextSecond} href="#">
-              {t('footerTextSecond')}
+              vegetables
             </a>
             <a className={styles.footerTextThird} href="#">
-              {t('footerTextThird')}
+              reviews
             </a>
           </div>
           <ul className={styles.footerInfo}>
